@@ -1,0 +1,86 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+<link href="{{MEDIA_URL}}/static/Site.css" rel="stylesheet">
+    
+
+
+</head>
+<body>
+<header>
+<div class="content-wrapper">
+<div class="float-left">
+
+<p class="site-title">About Patient Registration System </p>
+</div>
+<div class="float-right">
+<nav>
+<ul id="menu">
+<li><a href="/home/">Home</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/contact/">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div id="body">
+<section class="content-wrapper main-content clear-fix">
+<article>
+
+<p>This WEB-application is developed by </p>
+<h4>Ajinkya Chintawar</h4>
+<h4>Saurabh Bhoomkar</h4>
+<h4>Bhushan Agrawal</h4>
+<h4>Shripad Ashtekar</h4>
+<h4>Vinit Dangale</h4>
+<p></p>
+
+<p>Web service is intended to provide quick access to different hospitals
+located in pune city.</p>
+
+<p>Registers users can get the overall review of their Medical History,
+Previous prescriptions, total bill amount, upcoming appointmrnts.</p>
+
+<p>&nbsp;</p>
+
+<p>Project Guide:</p>
+<h4>&nbsp;Mr Ketan Bahulkar.<br>(SUNY Binghamton)</h4>
+
+<p></p>
+
+<p>The developing platform for this web application and software resources
+used in this software product are givn below.</p>
+
+<p>1. OSS (Open Source Softwares)</p>
+
+<p style="margin-left: 40px">1.Django -- Python web framework.</p>
+
+<p style="margin-left: 40px">2.IDLE -- Python IDE</p> 
+
+<p style="margin-left: 40px">3.GIT --VCS service </p>
+
+<p>2. Operating Systems</p> 
+
+<p style="margin-left: 40px">Nonproprietary Operating
+systems::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;Ubuntu Linux and LinuxMint</p> 
+
+<p style="margin-left: 40px">Microsoft Proprietary Operating
+systems::&nbsp;&nbsp;&nbsp;&nbsp; Windows 8</p> 
+
+<p>3. Paid Softwares</p> 
+
+<p style="margin-left: 40px">Microsoft Visual Studio 2012 Ultimate Edition.</p>
+</article> 
+<aside> 
+<h3>&nbsp;</h3> 
+
+<p>&nbsp;</p> 
+</aside> 
+</section> 
+</div>
+
+
+
+</body></html>

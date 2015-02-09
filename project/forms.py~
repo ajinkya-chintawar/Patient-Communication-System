@@ -1,0 +1,22 @@
+from django import forms
+'''
+class loginform(forms.Form):
+	uname=forms.CharField(max_length=30,widget=forms.TextInput())
+	pd=forms.CharField(max_length=30,widget=forms.PasswordInput())
+'''
+class UserForm(forms.Form):
+    """receiptNo = forms.IntegerField(widget=forms.TextInput(attrs={
+      'placeholder': 'Receipt Number'
+      }))"""
+    username = forms.CharField(label="Username", widget=forms.TextInput(attrs={
+      'placeholder': 'Username'
+      }))
+    first_name = forms.CharField(label="First Name",  widget=forms.TextInput(attrs={
+      'placeholder': 'First Name'
+      }))
+    last_name = forms.CharField(label="Last Name", widget=forms.TextInput(attrs={
+      'placeholder': 'Last Name'
+      }))
+    password = forms.CharField(max_length=15,widget=forms.PasswordInput(attrs={
+      'placeholder': 'Password'}))
+    

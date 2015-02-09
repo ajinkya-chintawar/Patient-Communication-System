@@ -1,0 +1,111 @@
+    
+<html>
+
+<link href="http://localhost:1466/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta content="width=device-width" name="viewport">
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        
+        <link href="/static/Site.css" rel="stylesheet">
+
+</head>
+<body >
+
+<div class="aspNetHidden">
+
+ 
+
+
+<script src="/static/Signup_files/MsAjaxJs.txt" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script> 
+<script src="/static/Signup_files/jquery-1.txt" type="text/javascript"></script>
+<script src="/static/Signup_files/jquery-ui-1.txt" type="text/javascript"></script>
+<script src="/static/Signup_files/WebFormsJs.txt" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script> 
+<div class="aspNetHidden"> 
+<input id="__EVENTVALIDATION" name="__EVENTVALIDATION" value="6UcfitmCiDSpe+Qy2a4/GGD9mbuY8cDq+ytixDL8j7A5rptEff+D78MApRu/kN/5vl2BQ2sml/3RhPwFliZft43SGsjpx/pzoYdxftqTeAcutArpMTTJCGNOgI0weaxcWBqlNZumUL+JLJHQyJ54XNF3iP07Zb4oZX6Eat3unQH2Aa7JIKzZe1r0VgmePSgDjOJoXTOFV1wxICLFbDEFOsZKgJ3l1hxuc8VrOZ/szt4=" type="hidden">
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl08', 'ctl01', [], [], [], 90, 'ctl00');
+//]]>
+</script> 
+<header> 
+<div class="content-wrapper"> 
+<div class="float-left"> 
+
+<p class="site-title" >SignUp To Our Site... </p>
+<br> 
+<br> 
+    </div>
+<div class="float-right"> 
+<nav> 
+<form action="/signup/" method="post">{% csrf_token %}
+
+{{message}}<br><br><br><br><br><br><br>
+
+
+<ul id="menu">
+<li><a href="/home/">Home</a></li>
+
+</ul>
+</nav> 
+</div></div></header>
+
+<div id="body" style="background-image:url('/static/header1.jpg')">
+  <font color="white">
+<section class="content-wrapper main-content clear-fix">
+  
+<ol>
+    <li><label for="MainContent_first_name" id="MainContent_Label1">First Name</label>
+        <input id="MainContent_UserName" name="first_name" type="text">
+        <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_first_name" data-val-errormessage="The first name field is required." data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" id="MainContent_RequiredFieldValidator1" style="visibility:hidden;">The First name field is required.</span> </li>
+    <li><label for="MainContent_last_name " id="MainContent_Label1">Last Name</label>
+        <input id="MainContent_UserName" name="last_name" type="text">
+        <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_last_name " data-val-errormessage="The last name field is required." data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" id="MainContent_RequiredFieldValidator1" style="visibility:hidden;">The Last name field is required.</span> </li>
+    <li><label for="MainContent_Email" id="MainContent_Label2">Email address</label>
+        <input id="MainContent_Email" name="email" type="email">
+            <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_Email" data-val-errormessage="The email address field is required." data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" id="MainContent_RequiredFieldValidator2" style="visibility:hidden;">The email address field is required.</span>
+        <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_Email" data-val-display="Dynamic" data-val-errormessage="Email not valid" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" id="MainContent_RegularExpressionValidator1" style="display:none;">Email not valid</span> </li>
+    <li><label for="MainContent_ContactNo" id="MainContent_Label3">Contact No.</label>
+        <input id="MainContent_ContactNo" name="contactno" type="text">
+            <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_ContactNo" data-val-errormessage="The Contact no. field is required." data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" id="MainContent_RequiredFieldValidator3" style="visibility:hidden;">The Contact no. field is required.</span>
+            <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_ContactNo" data-val-display="Dynamic" data-val-errormessage="Invalid mobile number Format" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^((0091)|(\+91)|0?)[789]{1}\d{9}$" id="MainContent_RegularExpressionValidator2" style="display:inline-block;color:#FC0328;font-family:Aharoni;font-weight:bold;height:12px;display:none;">Incorrect
+                Contact info</span> </li>
+ <li><label for="MainContent_UserName" id="MainContent_Label1">Username</label>
+        <input id="MainContent_UserName" name="username" type="text">
+        <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_UserName" data-val-errormessage="The user name field is required." data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" id="MainContent_RequiredFieldValidator1" style="visibility:hidden;">The user name field is required.</span> </li>   
+    <li><label for="MainContent_Password" id="MainContent_Label4">Password</label>
+
+        <input id="MainContent_Password" name="password" type="password">
+        <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_Password" data-val-errormessage="The password field is required." data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" id="MainContent_RequiredFieldValidator4" style="visibility:hidden;">The password field is required.</span> </li>
+    <li><label for="MainContent_ConfirmPassword" id="MainContent_Label5">Confirm password</label>
+        <input id="MainContent_ConfirmPassword" name="confirmpassword" type="password">
+            <span class="field-validation-error" data-val="true" data-val-controltovalidate="MainContent_ConfirmPassword" data-val-display="Dynamic" data-val-errormessage="The confirm password field is required." data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" id="MainContent_RequiredFieldValidator5" style="display:none;">The confirm password field is required.</span>
+            <span class="field-validation-error" data-val="true" data-val-controlhookup="MainContent_Password" data-val-controltocompare="MainContent_Password" data-val-controltovalidate="MainContent_ConfirmPassword" data-val-display="Dynamic" data-val-errormessage="The password and confirmation password do not match." data-val-evaluationfunction="CompareValidatorEvaluateIsValid" id="MainContent_CompareValidator1" style="display:none;">The password and confirmation password do not
+                match.</span> </li>
+    <li><label>You are a...</label>
+        <input type="radio" name="docorpat" value="doc"><b>Doctor</b>&nbsp;
+            <input type="radio" name="docorpat" value="pat"><b>Patient</b>&nbsp;
+                </li>
+  
+<p>
+<input type="submit" value="Submit" />
+</form>
+
+<p><span id="MainContent_Label6"></span> </p>
+</section> 
+
+
+
+ 
+</div></div></div></form></body></html>

@@ -1,0 +1,255 @@
+<HTML> 
+<HEAD>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/Users/shripadashtekar/Desktop/jquery.parallaxscroll.js"></script>
+<SCRIPT
+      type="text/javascript">
+      {% load staticfiles %}
+            var image1 = new Image();
+            image1.src = "{{MEDIA_URL}}/static/hospital.jpg"
+            var image2 = new Image();
+            image2.src = "{{MEDIA_URL}}/static/hos.jpg"
+            var image3 = new Image();
+            image3.src = "{{MEDIA_URL}}/static/hospitalmanagementsoftware.png"
+            var image4 = new Image();
+            image4.src = "{{MEDIA_URL}}/static/nurse.png"
+            var image5 = new Image();
+            image5.src = "{{MEDIA_URL}}/static/nurse1.png"
+            var image6 = new Image();
+            image6.src = "{{MEDIA_URL}}/static/img.jpg"
+</SCRIPT>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
+        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+            <link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}/static/CSS3FullscreenSlideshow/css/demo.css" />
+            <link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}/static/CSS3FullscreenSlideshow/images/home/style1.css" />
+            <script type="text/javascript" src="{{MEDIA_URL}}/static/CSS3FullscreenSlideshow/js/modernizr.custom.86080.js"></script>
+            <style type="text/css">
+                .auto-style1 {
+                    text-align: right;
+                }
+            .auto-style2 {
+                text-align: left;
+            }
+            </style>
+</HEAD>
+
+<BODY>
+    <ul class="cb-slideshow">
+        <li><span>Image 01</span><div><h3>&nbsp;</h3></div></li>
+        <li><span>Image 02</span><div><h3>&nbsp;</h3></div></li>
+        <li><span>Image 03</span><div><h3>&nbsp;</h3></div></li>
+        <li><span>Image 04</span><div><h3>&nbsp;</h3></div></li>
+        <li><span>Image 05</span><div><h3>&nbsp;</h3></div></li>
+        <li><span>Image 06</span><div><h3>&nbsp;</h3></div></li>
+    </ul>
+    
+<div class ="container">
+    <script type="text/javascript">
+        $('element').parallaxScroll({
+                                    multiplier: '2.0',
+                                    position: 'absolute',
+                                    negative: true
+                                    });
+        </script>
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="{{MEDIA_URL}}/static/jquery.mousewheel-3.0.6.pack.js"></script>
+    
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="{{MEDIA_URL}}/static/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="{{MEDIA_URL}}/static/jquery.fancybox.pack.js?v=2.1.5"></script>
+    
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="{{MEDIA_URL}}/static/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="{{MEDIA_URL}}/static/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}/static/jquery.fancybox-media.js?v=1.0.6"></script>
+    
+    <link rel="stylesheet" href="{{MEDIA_URL}}/static/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="{{MEDIA_URL}}/static/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    
+    
+<H1
+  align="middle"
+  style="color:white;font-size:25px;"><i>Welcome To Patient Communication System&nbsp;&nbsp;&nbsp; </i></H1>
+
+
+<H5
+  align="right"
+  style="color:white;"><i>&nbsp;&nbsp;&nbsp; </i></H5>
+
+<P>
+<IMG
+   height="550"
+   name="slide"
+   src="{{MEDIA_URL}}/static/hospital.jpg"
+   width="1425" /></P>
+<SCRIPT
+      type="text/javascript">
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<6)
+            step++;
+            else
+            step=1;
+            setTimeout(slideit,4000);
+        }
+    slideit();
+</SCRIPT> <br><br>
+<H2
+  style="color:white;font-size:20px"><b><i>Select your nearest hospital
+here ...... </i></b></H2>
+
+<BR> 
+<SELECT
+      id="Select1"
+      name="D1">
+<OPTION>1.Poona Hospital </OPTION>
+<OPTION>2.Ruby Heart Care Centre</OPTION>
+<OPTION>3.Sasoon Hospital</OPTION>
+<OPTION>4.Bharati Hospital</OPTION>
+<OPTION>5.J J Hospital</OPTION>
+<SELECT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="/login">
+<INPUT
+     id="Button1"
+     name="Button1"
+     type="submit"
+     value="Confirm"
+     style="color:white"/>
+
+
+</a>
+<style>
+     input[type=submit]{
+     width:8em;
+     height:3em;
+     }
+     SELECT{
+         width:14em;height:3em;
+     }
+     </style>
+     <br><br><br>
+    
+               
+     <ul  style="position: relative; overflow: hidden; height: 490px;"><li  id="gallery-item-458" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(255px, 0px, 0px);">
+         <div>
+             <a href="{{MEDIA_URL}}/children">
+            
+             <img width="225" height="150" src="{{MEDIA_URL}}/static/spocktalk.jpg"   style="display: block;">
+                 </a>
+             <div >
+                 <h3 align="center"  style="color:white">SpockTalk</h3>
+             </div>
+             <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                 <li>
+                     <a class="fancybox" rel="group" href="{{MEDIA_URL}}/static/about.jpg"><img src="{{MEDIA_URL}}/static/about.jpg" alt="About us" /></a>
+                 </li><li><a href="{{MEDIA_URL}}/static/about.jpg" class="fancybox open_lightbox" rel="gallery_item_458" style="background-image: url('{{MEDIA_URL}}/static/about.jpg')"></a>
+                 </li></ul></div></li><li class="primery-health-care isotope-item" id="gallery-item-467" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(1020px, 0px, 0px);">
+                     
+                     <div >
+                         <a href="{{MEDIA_URL}}/contact">
+                         <img width="225" height="150" src="{{MEDIA_URL}}/static/contact.jpg"  style="display: block;">
+                             </a>
+                         <div >
+                             <h3 align="center"  style="color:white">Contact us</h3>
+                         </div>
+                         <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                             <li>
+                                 <a href="#gallery-details-467" class="open_details" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/details.png')"></a>
+                             </li><li><a href="http://manageprojects.in/dental/wp-content/uploads/2013/02/image_01.jpg" class="fancybox open_lightbox" rel="gallery_item_467" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/image.png')"></a>
+                             </li></ul></div></li><li class="cardiac-clinic-0 isotope-item" id="gallery-item-469" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(510px, 0px, 0px);">
+                                 <div class="gallery_box">
+                                     <a href="{{MEDIA_URL}}/login">
+ 
+                                     <img width="225" height="150" src="{{MEDIA_URL}}/static/login.png" class="mc_preload wp-post-image" alt="Microwave cooking" title="" style="display: block;">
+                                         </a>
+                                         
+                                     <div class="description">
+                                         <h3 align="center"  style="color:white">Login</h3>
+                                     </div>
+                                     <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                                         <li>
+                                             <a href="#gallery-details-469" class="open_details" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/details.png')"></a>
+                                         </li><li><a href="http://www.youtube.com/embed/KAi2QIq1SUs" class="fancybox-video open_video_lightbox" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/video.png')"></a>
+                                         </li></ul></div></li><li class="pediatric-clinic-0 isotope-item" id="gallery-item-471" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(765px, 0px, 0px);">
+                                             <div class="gallery_box">
+                                                 <a href="{{MEDIA_URL}}/signup">
+
+                                                 <img width="225" height="150" src="{{MEDIA_URL}}/static/signup.jpg" class="mc_preload wp-post-image" alt="New diabetes drug" title="" style="display: block;">
+                                                     </a>
+                                                 <div class="description">
+                                                     <h3 align="center"  style="color:white">Sign up</h3>
+                                                 </div>
+                                                 <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                                                     <li>
+                                                         <a href="#gallery-details-471" class="open_details" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/details.png')"></a>
+                                                     </li><li><a href="http://quanticalabs.com" class="fancybox-iframe open_iframe_lightbox" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/url.png')"></a>
+                                                     </li></ul></div></li><li class="cardiac-clinic-0 isotope-item" id="gallery-item-472" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(1020px, 245px, 0px);">
+                                                        
+                                                        
+        
+                                                        
+                                                        <div class="gallery_box">
+                                                            <a href="{{MEDIA_URL}}/sympt">
+                                                            <img width="225" height="150" src="{{MEDIA_URL}}/static/symptoms.jpg" class="mc_preload wp-post-image" alt="Flu season continues" title="" style="display: block;"></a>
+                                                             <div class="description">
+                                                                 <h3 align="center"  style="color:white">Symptoms</h3>
+                                                             </div>
+                                                             <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                                                                 <li>
+                                                                     <a href="#gallery-details-472" class="open_details" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/details.png')"></a>
+                                                                 </li><li><a href="http://player.vimeo.com/video/56755711" class="fancybox-video open_video_lightbox" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/video.png')"></a>
+                                                                 </li></ul></div></li><li class="pediatric-clinic-0 isotope-item" id="gallery-item-473" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(255px, 245px, 0px);">
+                                                                     <div class="gallery_box">
+                                                                         <a href="{{MEDIA_URL}}/doct1">
+                                                                         <img width="225" height="150" src="{{MEDIA_URL}}/static/docpan.jpg" class="mc_preload wp-post-image" alt="Springtime allergies" title="" style="display: block;"></a>
+                                                                         <div class="description">
+                                                                             <h3 align="center"  style="color:white">Doctor's Panel</h3>
+                                                                         </div>
+                                                                         <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                                                                             <li>
+                                                                                 <a href="#gallery-details-473" class="open_details" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/details.png')"></a>
+                                                                             </li><li><a href="http://manageprojects.in/dental/wp-content/uploads/2013/04/image_11.jpg" class="fancybox open_lightbox" rel="gallery_item_473" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/image.png')"></a>
+                                                                             </li></ul></div></li><li class="primery-health-care isotope-item" id="gallery-item-474" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(510px, 228px, 0px);">
+                                                                                 
+                                                                                 <div class="gallery_box">
+                                                                                     <br>
+                                                                                     <a href="{{MEDIA_URL}}/about">
+                                                                                
+
+                                                                                     <img width="225" height="150" src="{{MEDIA_URL}}/static/about.jpg" class="mc_preload wp-post-image" alt="Drug safety congress" title="" style="display: block;">
+                                                                                         </a>
+                                                                                     <div class="description">
+                                                                                         <h3 align="center"  style="color:white">About Us</h3>
+                                                                                     </div>
+                                                                                     <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                                                                                         <li>
+                                                                                             <a href="#gallery-details-474" class="open_details" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/details.png')"></a>
+                                                                                         </li><li><a href="http://manageprojects.in/dental/wp-content/uploads/2013/04/image_09.jpg" class="fancybox open_lightbox" rel="gallery_item_474" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/image.png')"></a>
+                                                                                         </li></ul></div></li><li class="outpatient-surgery-3 isotope-item" id="gallery-item-475" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(765px, 245px, 0px);">
+                                                                                             <div class="gallery_box">
+                                                                                            <a href="{{MEDIA_URL}}/update">
+                                                                                                 <img width="225" height="150" src="{{MEDIA_URL}}/static/update.jpg" class="mc_preload wp-post-image" alt="Robot therapy" title="" style="display: block;">
+                                                                 </a>                                <div class="description">
+                                                                                                     <h3 align="center"  style="color:white">Update Info</h3>
+                                                                                                 </div>
+                                                                                                 <ul class="controls" style="margin-left: 62.5px; top: 150px; display: none;">
+                                                                                                     <li>
+                                                                                                         <a href="#gallery-details-475" class="open_details" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/details.png')"></a>
+                                                                                                     </li><li><a href="http://manageprojects.in/dental/wp-content/uploads/2013/02/image_05.jpg" class="fancybox open_lightbox" rel="gallery_item_475" style="background-image: url('http://manageprojects.in/dental/wp-content/themes/medicenter/images/icons_media/blue_light/image.png')"></a>
+                                                                                                     </li></ul></div></li></ul>
+     
+</div>
+</BODY>
+</HTML> 

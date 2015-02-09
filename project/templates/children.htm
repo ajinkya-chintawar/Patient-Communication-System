@@ -1,0 +1,234 @@
+<html>
+    <head  >
+    
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        
+        <link href="{{MEDIA_URL}}/static/Site.css" rel="stylesheet">
+            
+            <style type="text/css">
+                #Checkbox1 {
+                    height: 50px;
+                    width: 50px;
+                }
+            #Checkbox2 {
+                height: 50px;
+                width: 50px;
+            }
+            #Checkbox3 {
+                height: 50px;
+                width: 49px;
+            }
+            td {
+                text-align: center;
+            }
+            </style>
+            
+            
+            
+
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-middle">
+                    
+                    <p class="site-title" align="center">SPOCKTALK SECTION </p>
+                </div>
+                <div >
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="/home/">Home</a></li>
+                            <li><a href="/about/">About</a></li>
+                            <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+   
+   
+   
+   <script src="{{MEDIA_URL}}/static/snowstorm.js"></script>
+   <video  style="background-color:CC6600;" align="center" id="myvideo" width="1425" height="600" autoplay >
+       
+       <source src="{{MEDIA_URL}}/static/intro.mp4" >
+   </video>
+   
+ 
+
+<script>
+    function delays()
+    {
+    var video=document.getElementById("myvideo");
+    video.load();
+    video.play();
+    }
+
+setInterval(delays,60000);
+
+
+    </script>
+<form action="/children/" method="post">{% csrf_token %}
+<table width="1425">
+    <colgroup>
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+    </colgroup>
+    <tr>
+        <td align="center">
+            <img id ="myimg0" onclick="delay00()" src="{{MEDIA_URL}}/static/fever.jpg"/>
+            
+            <audio id="myaudio">
+               <source src="{{MEDIA_URL}}/static/cry.mp3" >
+                    </audio>
+            <script>
+                var v = new Array();
+                v[0] = [
+                "{{MEDIA_URL}}/static/sad.mp4",
+                        ];
+                        v[1] = [
+                                "{{MEDIA_URL}}/static/fever.mp4"
+                                ];
+                                v[2] = [
+                                "{{MEDIA_URL}}/static/headache.mp4"
+                                        ];
+                                        v[3] = [
+                                                "{{MEDIA_URL}}/static/stomachache.mp4"
+                                                ];
+                                                
+                                                var m = new Array();
+                                                m[0] = [
+                                                        "{{MEDIA_URL}}/static/cry.mp3",
+                                                        ];
+                                                        m[1] = [
+                                                                "{{MEDIA_URL}}/static/feverish.mp3"
+                                                                ];
+                                                                m[2] = [
+                                                                        "{{MEDIA_URL}}/static/headache.mp4"
+                                                                        ];
+                                                                        m[3] = [
+                                                                                "{{MEDIA_URL}}/static/stomachache.mp4"
+                                                                                ];
+                                                                                
+
+                                                
+                                                
+                                                function delay00()
+                                                {
+                                                    var audio=document.getElementById("myaudio");
+                                                    audio.setAttribute("src", m[0]);
+                                                    audio.load();
+                                                    audio.play();
+                                                }
+                                        
+                
+                function delay0()
+                {
+                    var video=document.getElementById("myvideo");
+                    video.setAttribute("src", v[1]);
+                    video.load();
+                    video.play();
+                }
+
+                </script>
+        </td>
+    <td align="center">
+<img id ="myimg1" onclick="delay1()" src="{{MEDIA_URL}}/static/headache.gif"/>
+<script>
+    
+                                    function delay1()
+                                    {
+                                        var video=document.getElementById("myvideo");
+                                        video.setAttribute("src", v[2]);
+                                        video.load();
+                                        video.play();
+                                    }
+
+    </script>
+</td>
+<td align="center">
+    <img id ="myimg2" onclick="delay2()" src="{{MEDIA_URL}}/static/feelingsad.gif"/>
+    <script>
+        
+        function delay2()
+        {
+            var video=document.getElementById("myvideo");
+            video.setAttribute("src", v[0]);
+            video.load();
+            video.play();
+        }
+    
+        </script>
+</td>
+</tr>
+    <tr>
+        <td>
+            <label>FEVER</label>
+            </td>
+        <td>
+            <label>HEADACHE</label>
+        </td>
+
+<td>
+    <label>FEELING SAD</label>
+</td>
+
+        </tr>
+    <tr>
+        <td>
+        <input id="Checkbox1" name="fever" type="checkbox" value="yes" onclick="myonclickhandler(this)" />
+        <script type="text/javascript">
+            function myonclickhandler(t) {
+                if (t.checked) {
+                    delay0();
+                }
+                else {
+                    return;
+                }
+            }
+        </script>
+        </td>
+        <td>
+            <input id="Checkbox2"  name="head" type="checkbox" value="yes" onclick="myonclickhandler1(this)"/>
+            <script type="text/javascript">
+                function myonclickhandler1(t) {
+                    if (t.checked) {
+                        delay1();
+                    }
+                    else {
+                        return;
+                    }
+                }
+            </script>
+
+        </td>
+        <td>
+            <input id="Checkbox3" type="checkbox" name="sad" value="yes" onclick="myonclickhandler2(this)" />
+            <script type="text/javascript">
+                function myonclickhandler2(t) {
+                    if (t.checked) {
+                        delay2();
+                    }
+                    else {
+                        return;
+                    }
+                }
+            </script>
+
+        </td>
+        </tr>
+   
+    </table>
+<div style="text-align:center">
+    
+<INPUT
+id="Button1"
+name="Button1"
+type="submit"
+value="Confirm"
+/>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+from django.db import models
+from django.contrib import admin
+
+# Create your models here.
+from django.contrib.auth.models import User, UserManager
+
+class log(models.Model):
+	user=models.OneToOneField(User)	
+admin.site.register(log)
+
+
